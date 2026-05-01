@@ -1,13 +1,10 @@
 # Homework 5: Debt Maturity Audit Skill
 
 ### What the skill does
-This skill extracts debt instrument data (bonds, notes, loans) and uses a Python script to calculate exact days until maturity and the weighted average interest rate of the portfolio.
+Analyzes a list of debt instruments, calculates exact days until maturity, and determines the weighted average interest rate across the portfolio.
 
-### Why I chose it
-In Internal Audit, precision is everything. LLMs often hallucinate date counts or make small rounding errors when calculating weighted averages across large datasets. Using a script ensures the math is 100% deterministic.
-
-### How to use
-Paste a list of debt instruments into an agent (like Claude Code or Copilot) and ask it to "Audit these maturities using my debt skill."
+### Why the script is load-bearing
+Calculating weighted averages and counting exact days between dates (handling leap years or varying month lengths) is a deterministic task. LLMs are prone to "near-miss" math errors or hallucinations with these figures. This Python script ensures 100% accuracy for financial auditing.
 
 ### Walkthrough Video
-[Link to be added after recording]
+https://youtu.be/iZ4yX7ZQt84
